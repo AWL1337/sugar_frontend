@@ -7,7 +7,7 @@ import {useState} from "react";
 import {UserContext} from "./Context/UserContext";
 
 function App() {
-    const [Auth, setAuth] = useState(false)
+    const [Auth, setAuth] = useState(true)
     const [userName, setUserName] = useState("Стас Барецкий")
     const [userLogin, setUserLogin] = useState("stas@baretskii.su")
     const [userHeight, setUserHeight] = useState("1.75м")

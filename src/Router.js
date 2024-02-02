@@ -1,7 +1,7 @@
 import {Route, Routes} from "react-router-dom";
-import Register from "./Components/Register/Register";
-import Authorization from "./Components/Authorization/Authorization";
-import Account from "./Components/Account/Account";
+import Register from "./Pages/Register/Register";
+import Authorization from "./Pages/Authorization/Authorization";
+import Account from "./Pages/Account/Account";
 import {useContext} from "react";
 import {AuthContext} from "./Context/AuthContext";
 
