@@ -8,13 +8,16 @@ import {UserContext} from "./Context/UserContext";
 
 function App() {
     const [Auth, setAuth] = useState(false)
-    const [userName, setUserName] = useState("Стас Барецкий")
-    const [userLogin, setUserLogin] = useState("stas@baretskii.su")
-    const [userHeight, setUserHeight] = useState("1.75м")
-    const [userWeight, setUserWeight] = useState("200кг")
+    const [User, setUser] = useState(
+        {
+            name: "Стас Барецкий",
+            login: "stas@baretskii.su",
+            height: "1.75м",
+            weight:"200кг"
+        })
 
   return (
-      <UserContext.Provider value={{userName, userLogin, userHeight, userWeight, setUserName, setUserLogin, setUserHeight, setUserWeight}}>
+      <UserContext.Provider value={{User, setUser}}>
             <AuthContext.Provider value={{Auth, setAuth}}>
                 <BrowserRouter>
                     <AppRouter/>
