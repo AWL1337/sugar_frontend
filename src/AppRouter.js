@@ -5,7 +5,7 @@ import Account from "./Pages/Account/Account";
 import {useContext} from "react";
 import {AuthContext} from "./Context/AuthContext";
 
-const Router = () => {
+const AppRouter = () => {
     const {Auth} = useContext(AuthContext)
 
     return (
@@ -23,4 +23,4 @@ const Router = () => {
     )
 }
 
-export default Router;
+export default AppRouter;
